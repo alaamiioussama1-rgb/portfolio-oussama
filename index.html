@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oussama El Alami | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1725;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #172338;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #55d6be;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul a:hover {
+            color: #55d6be;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: linear-gradient(120deg, #172338, #203b50);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #55d6be;
+        }
+
+        .hero h2 {
+            color: #c6d2df;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background-color: #55d6be;
+            color: #101827;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 70px 8%;
+        }
+
+        .section h2 {
+            color: #55d6be;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            max-width: 850px;
+            color: #d5deea;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #172338;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #2b3b51;
+        }
+
+        .card h3 {
+            color: #55d6be;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            display: flex;
+            gap: 25px;
+            background-color: #172338;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 850px;
+        }
+
+        .project-number {
+            color: #55d6be;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .project h3 {
+            color: #55d6be;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tags span {
+            background-color: #263b50;
+            color: #55d6be;
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+
+        .timeline {
+            border-left: 2px solid #55d6be;
+            padding-left: 25px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+
+        .timeline-item span {
+            color: #55d6be;
+        }
+
+        .contact-box {
+            background-color: #172338;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 550px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #172338;
+            color: #c6d2df;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .project {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+        .photo-container {
+    width: 130px;
+    height: 130px;
+    margin: 20px auto;
+    border: 3px solid #55d6be;
+    border-radius: 50%;
+    padding: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(85, 214, 190, 0.3);
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+       
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#accueil" class="logo">Oussama<span>.</span></a>
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projet">Projet</a></li>
+                <li><a href="#formation">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="photo-container">
+    <img src="WhatsApp Image 2026-11-20 at 17.03.40.jpeg"
+         alt="Photo de Oussama El Alami">
+</div>
+
+    <!-- Accueil -->
+    <section class="hero" id="accueil">
+        <p>Bienvenue sur mon portfolio</p>
+
+        <h1>Bonjour, je suis <span>Oussama El Alami</span></h1>
+
+        <h2>Étudiant en Développement Digital à l'ISTA</h2>
+
+        <p>
+            Je découvre le développement web et j'apprends à créer
+            des pages web simples avec HTML, CSS et JavaScript.
+        </p>
+
+        <a href="#apropos" class="button">Découvrir mon parcours</a>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="apropos">
+        <h2>À propos</h2>
+
+        <p class="intro">
+            Titulaire d’un Baccalauréat en Sciences Physiques obtenu en 2024,
+            je suis actuellement étudiant en Développement Digital à l’ISTA
+            (2025–2027).
+
+            Durant mon parcours, j’ai découvert les bases de la programmation
+            avec HTML, CSS, JavaScript et Python. Je réalise mes premiers
+            exercices et projets pratiques afin de développer progressivement
+            mes compétences.
+        </p>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section" id="competences">
+        <h2>Mes compétences</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Créer la structure et le contenu d'une page web.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Mettre en forme les pages et organiser leur présentation.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Ajouter des interactions simples aux pages web.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Découvrir les bases de la programmation.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projet -->
+    <section class="section" id="projet">
+        <h2>Mon premier projet</h2>
+
+        <div class="project">
+
+            <div class="project-number">01</div>
+
+            <div>
+                <h3>Ma première page web</h3>
+
+                <p>
+                    Création d'une page web simple : HTML pour organiser
+                    le contenu, CSS pour le design et JavaScript pour
+                    ajouter quelques interactions.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formation -->
+    <section class="section" id="formation">
+        <h2>Mon parcours</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>2024</span>
+                <h3>Baccalauréat en Sciences Physiques</h3>
+            </div>
+
+            <div class="timeline-item">
+                <span>2025 – 2027</span>
+                <h3>Formation en Développement Digital</h3>
+                <p>ISTA</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-box">
+            <p><strong>Nom :</strong> Oussama El Alami</p>
+            <p><strong>Email :</strong>alaamiioussama1@gmail.com</p>
+            <p><strong>GitHub :</strong>alaamiioussama1-rgb</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Oussama El Alami</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+```
